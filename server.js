@@ -3,7 +3,7 @@ var soap = require('soap');
 var helloService = {
   Hello_Service: {
     Hello_Port: {
-      SayHelloRequest: function(args) {
+      sayHello: function (args) {
         return {
           firstName: args.name
         };
@@ -11,6 +11,8 @@ var helloService = {
     }
   }
 }
+
+
 var xml = require('fs').readFileSync('./scheme.wsdl', 'utf8'),
       server = http.createServer(function(request,response) {
           response.end("404: Not Found: "+request.url)
