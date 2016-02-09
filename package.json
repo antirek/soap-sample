@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/antirek/soap-sample",
   "dependencies": {
-    "soap": "^0.9.3"
+    "soap": "^0.12.0"
   }
 }
