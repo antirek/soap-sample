@@ -3,10 +3,10 @@ var soap = require('soap');
 var helloService = {
   Hello_Service: {
     Hello_Port: {
-      sayHello: function (args) {
-        return {
+      sayHello: function (args, cb) {
+        cb({
           firstName: args.name
-        };
+        });
       }
     }
   }
