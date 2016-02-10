@@ -6,7 +6,7 @@ var args = {appId: 'XXXX'};
 soap.createClient(url, function (err, client) {
     console.dir(client.describe());
 
-    client.sayHello({name: 'vasya'}, function (err, result) {
+    client.sayHello({name: 'vasya', surname: 'petrov'}, function (err, result) {
         console.log(err, result);
     });
 });
